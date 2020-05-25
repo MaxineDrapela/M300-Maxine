@@ -1,10 +1,9 @@
 # M300
 This is a repository that is used to document my process and which is used as a cloud.
-## Dokumentation LB2 
-## von Maxine Drapela
+## Dokumentation LB2 von Maxine Drapela###
 
-### Inhaltsverzeichnis
-# Table of contents
+
+# Inhaltsverzeichnis
 
 - [K1](#k1)
   - [Umgebung bereit machen](#umgebung-bereit-machen)
@@ -33,4 +32,5 @@ This is a repository that is used to document my process and which is used as a 
     - [Vorwissen und Wissenszuwachs](#vorwissen-und-wissenszuwachs)
     - [Reflexion](#reflexion)
   
-  
+## K1
+## Umgebung bereit machen
