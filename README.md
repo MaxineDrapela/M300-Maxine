@@ -51,7 +51,7 @@ Nun fragt man wo man den Schlüssen speichern soll. Um den Standard zu wählen k
 
 Um dann den SSH Key dem SSH Agent hinzuzufügen kopiert man die Datei %HOME%/.ssh/id_rsa.pub oder $HOME/.ssh/id_rsa.pub und besucht daraufhin die Website [www.github.com](http://www.github.com/)
 Dort öffnet man Settings > SSH Keys und erstellt ein neuer SSH Key unter "New SSH key" und gibt die kopierte Datei von der Zwischenablage ein. Sobald der SSH Key erkannt wird ist dieser eingerichtet und erledigt.
-![enter image description here](https://raw.githubusercontent.com/naiarabarzola1/Modul300/master/Unbenannt1.PNG)
+
 
 #### Git-Client
 
