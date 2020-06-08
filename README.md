@@ -10,22 +10,30 @@ This is a repository that is used to document my process and which is used as a 
 - [K2](#k2)
     - [Umgebung eingerichtet](#umgebung-eingerichtet)
 
-- [K3](#k3)
-  - [Vagrant-Befehle](#vagrant-befehle)
-  - [Umgebungsvariabel](#umgebungsvariabel)
-  - [Netzwerkplan](#netzwerkplan)
-  - [Sicherheitsaspekte](#sicherheitsaspekte)
-  - [Testfälle](#testflle)
-- [K4](#k4)
-  - [Firewall mit den Rules](#firewall-mit-den-rules)
-  - [Reverse-Proxy](#reverse-proxy)
-  - [Benutzer- und Rechtvergabe](#benutzer--und-rechtvergabe)
-  - [SSH-Tunnel](#ssh-tunnel)
-  - [Sicherheitsmassnahmen](#sicherheitsmassnahmen)
-- [K5](#k5)
-  - [Persönliche Lernentwicklung](#persnliche-lernentwicklung)
-    - [Vorwissen und Wissenszuwachs](#vorwissen-und-wissenszuwachs)
-    - [Reflexion](#reflexion)
+- [M300](#m300)
+    - [Dokumentation LB2 von Maxine Drapela](#dokumentation-lb2-von-maxine-drapela)
+- [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [K1](#k1)
+    - [Umgebung bereit machen](#umgebung-bereit-machen)
+    - [SSH Key](#ssh-key)
+    - [Git-Client](#git-client)
+  - [K2 Umgebung eingerichtet](#k2-umgebung-eingerichtet)
+    - [Persönlicher Wissensstand zu den Themen](#persönlicher-wissensstand-zu-den-themen)
+      - [Virtualisierung mit Virtualbox](#virtualisierung-mit-virtualbox)
+      - [Vagrant](#vagrant)
+      - [Sicherheit](#sicherheit)
+  - [K3 Vagrant](#k3-vagrant)
+    - [vagrant-befehle](#vagrant-befehle)
+    - [umgebungsvariabel](#umgebungsvariabel)
+    - [netzwerkplan](#netzwerkplan)
+    - [sicherheitsaspekte](#sicherheitsaspekte)
+    - [testfälle](#testfälle)
+  - [K4 Sicherheitsaspekte implementieren](#k4-sicherheitsaspekte-implementieren)
+    - [Firewall mit den Rules](#firewall-mit-den-rules)
+    - [Reverse-Proxy Einrichtung](#reverse-proxy-einrichtung)
+    - [Benutzer- und Rechtvergabe](#benutzer--und-rechtvergabe)
+    - [SSH-Tunnel](#ssh-tunnel)
+    - [Sicherheitsmassnahmen](#sicherheitsmassnahmen)
   
 ## K1
 ### Umgebung bereit machen
@@ -92,12 +100,38 @@ Die Einrichtung mit Vagrant war recht simpel. Ich konnte alles so installieren, 
 #### Sicherheit
 **reverse Proxy**
 Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehender denkt er kommuniziere direkt mit mir, er wird jedoch zum Reverse Proxy weitergeleitet der meine Identität geheimhält und ihm eine andere zurückgibt. 
-**Einrichtung Reverse Proxy**
 
 ## K3 Vagrant
  ### vagrant-befehle
+ Vagrant 
  ### umgebungsvariabel
+
  ### netzwerkplan
  ### sicherheitsaspekte
- ### testflle
+ ### testfälle
 
+
+
+## K4 Sicherheitsaspekte implementieren
+  ### Firewall mit den Rules
+  Nun habe ich die Firewall UFW installiert. Ich habe die Ports 80 und 22 freigegeben für die IP 10.0.2.2. Bei diesem Punkt bin ich mir aber unsicher. 
+  Ich habe zuerst alle Rules erstellt, und dann erst am Schluss die Firewall enabled.
+  Folgende Befehle habe ich eingegeben:
+   `sudo ufw allow from 10.0.2.2 to any port 22`
+   `sudo ufw allow 80/tcp`
+   `sufo ufw allow out 22/tcp`
+   Nachdem ich alle Regeln eingegeben habe, habe ich die Firewall mit dem Befehl `sudo ufw enable` angeschalten. Danach bin ich mit dem Befehl `exit` raus. Um zu testen, ob ich dann wieder reinkomme, bin ich dann mit `vagrant ssh` wieder in meine VM, mit Erfolg!
+
+  ### Reverse-Proxy Einrichtung
+  Der Apache Webserver kann auch als Reverse Proxy einesetzt werden. Für das muss ich folgende Module in Apache2 installieren
+    `sudo a2enmod proxy`
+    `sudo a2enmod proxy_html`
+    `sudo a2enmod proxy_http`
+  und die conf Datei von Apache2 musste ich mit folgendem ergänzen:
+  `ServerName localhost`
+  Danach habe ich den Apache-Webserver neu gestartet.
+  **Konfiguration**
+  
+  ### Benutzer- und Rechtvergabe
+  ### SSH-Tunnel
+  ### Sicherheitsmassnahmen
