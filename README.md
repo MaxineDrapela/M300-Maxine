@@ -117,18 +117,18 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
   Nun habe ich die Firewall UFW installiert. Ich habe die Ports 80 und 22 freigegeben für die IP 10.0.2.2. Bei diesem Punkt bin ich mir aber unsicher. 
   Ich habe zuerst alle Rules erstellt, und dann erst am Schluss die Firewall enabled.
   Folgende Befehle habe ich eingegeben:
-   `sudo ufw allow from 10.0.2.2 to any port 22`
-   `sudo ufw allow 80/tcp`
-   `sufo ufw allow out 22/tcp`
+  -  `sudo ufw allow from 10.0.2.2 to any port 22`
+  -  `sudo ufw allow 80/tcp`
+  - `sufo ufw allow out 22/tcp`
    Nachdem ich alle Regeln eingegeben habe, habe ich die Firewall mit dem Befehl `sudo ufw enable` angeschalten. Danach bin ich mit dem Befehl `exit` raus. Um zu testen, ob ich dann wieder reinkomme, bin ich dann mit `vagrant ssh` wieder in meine VM, mit Erfolg!
 
   ### Reverse-Proxy Einrichtung
-  Der Apache Webserver kann auch als Reverse Proxy einesetzt werden. Für das muss ich folgende Module in Apache2 installieren
-    `sudo a2enmod proxy`
-    `sudo a2enmod proxy_html`
-    `sudo a2enmod proxy_http`
+  Der Apache Webserver kann auch als Reverse Proxy einesetzt werden. Für das muss ich folgende Module in Apache2 installieren  
+    - `sudo a2enmod proxy`  
+    - `sudo a2enmod proxy_html`  
+    - `sudo a2enmod proxy_http`  
   und die conf Datei von Apache2 musste ich mit folgendem ergänzen:
-  `ServerName localhost`
+   -  `ServerName localhost`
   Danach habe ich den Apache-Webserver neu gestartet.
   **Konfiguration**
   
