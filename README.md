@@ -8,7 +8,6 @@ This is a repository that is used to document my process and which is used as a 
 - [K1](#k1)
   - [Umgebung bereit machen](#umgebung-bereit-machen)
 - [K2](#k2)
-  - [persönlicher Wissensstand](#persnlicher-wissensstand)
     - [Linux](#linux)
     - [Virtualisierung](#virtualisierung)
     - [Vagrant](#vagrant)
@@ -32,9 +31,9 @@ This is a repository that is used to document my process and which is used as a 
     - [Vorwissen und Wissenszuwachs](#vorwissen-und-wissenszuwachs)
     - [Reflexion](#reflexion)
   
-### K1
-#### Umgebung bereit machen
-#### SSH Key
+## K1
+### Umgebung bereit machen
+### SSH Key
     
 SSH-Key erstellen
 
@@ -53,7 +52,7 @@ Um dann den SSH Key dem SSH Agent hinzuzufügen kopiert man die Datei %HOME%/.ss
 Dort öffnet man Settings > SSH Keys und erstellt ein neuer SSH Key unter "New SSH key" und gibt die kopierte Datei von der Zwischenablage ein. Sobald der SSH Key erkannt wird ist dieser eingerichtet und erledigt.
 
 
-#### Git-Client
+### Git-Client
 
 Der Git-Client ist ein kommandozeilenbasierendes Tool, mit welchem man GitHub Repositories bedienen kann. Es kann mit dem Linux Bash verglichen werden, da sie im Prinzip gleich arbeiten. Dies kann man auf der offiziellen Website herunterladen und installieren.  
 https://git-scm.com/downloads
@@ -74,7 +73,19 @@ Mit diesem Befehl werden Online Repositories im gewünschten Ordner importiert.
 	 
 Repository herunterladen	
 
+
+
 Mit dem folgenden Befehl holt man alle Daten, die auf dem Online Service sind, herunter auf die lokale Maschine.
 
 	$ git pull
 	
+	
+## K2
+
+### Linux
+### Virtualisierung
+### Vagrant
+### Git
+### Markdown
+### Systemsicherheit
+
