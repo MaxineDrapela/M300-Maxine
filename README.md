@@ -131,7 +131,8 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
    -  `ServerName localhost`
   Danach habe ich den Apache-Webserver neu gestartet.
   **Konfiguration**
-  
+  Hier habe ich im File `001-reversedproxy` noch die Weiterleitungen eingetragen.
   ### Benutzer- und Rechtvergabe
+  
   ### SSH-Tunnel
   ### Sicherheitsmassnahmen
