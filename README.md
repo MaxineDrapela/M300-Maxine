@@ -112,7 +112,7 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
  ### testfälle
  #### Test 1 - Apache Webserver
  Ich habe in meiner Vagrantfile eine Portweiterleitung eingerichtet, sodass ich mit 8080 Port auf den Default Web Page komme.
- ![Default Page](testapache.png)
+ ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/testapache.PNG "Default Apache Webpage")
  Das hat sehr gut geklappt. 
 
 
