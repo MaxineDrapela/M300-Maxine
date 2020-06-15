@@ -109,7 +109,7 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
  ### umgebungsvariabel
 
  ### netzwerkplan
- ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/netzwerkplan.PNG "Netzwerkplan")
+ ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/netzwerkplan.PNG "Netzwerkplan")
  Meinen Netzwekplan habe ich relativ simpel gehalten. Da mein Laptop nicht direkt am Router angeschlossen ist, habe ich dazwischen noch einen Access Point reingetan.
  ### Webalizer Installation
  Mit dem Programm Webalizer kann man verschiedene Log Dateien auswerten. Die Installation ist sehr simpel aufgebaut.
@@ -121,7 +121,7 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
  ### testfälle
  #### Test 1 - Apache Webserver
  Ich habe in meiner Vagrantfile eine Portweiterleitung eingerichtet, sodass ich mit 8080 Port auf den Default Web Page komme.
- ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/testapache.PNG "Default Apache Webpage")
+ ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/testapache.PNG "Default Apache Webpage")
  Das hat sehr gut geklappt. Die Default Seite hat sich angezeigt.
 
 
