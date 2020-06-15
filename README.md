@@ -28,6 +28,7 @@ This is a repository that is used to document my process and which is used as a 
     - [netzwerkplan](#netzwerkplan)
     - [sicherheitsaspekte](#sicherheitsaspekte)
     - [testfälle](#testfälle)
+      - [Test 1 - Apache Webserver](#test-1---apache-webserver)
   - [K4 Sicherheitsaspekte implementieren](#k4-sicherheitsaspekte-implementieren)
     - [Firewall mit den Rules](#firewall-mit-den-rules)
     - [Reverse-Proxy Einrichtung](#reverse-proxy-einrichtung)
@@ -109,6 +110,10 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
  ### netzwerkplan
  ### sicherheitsaspekte
  ### testfälle
+ #### Test 1 - Apache Webserver
+ Ich habe in meiner Vagrantfile eine Portweiterleitung eingerichtet, sodass ich mit 8080 Port auf den Default Web Page komme.
+ ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/testapache.PNG "Default Apache Webpage")
+ Das hat sehr gut geklappt. Die Default Seite hat sich angezeigt.
 
 
 
@@ -131,7 +136,8 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
    -  `ServerName localhost`
   Danach habe ich den Apache-Webserver neu gestartet.
   **Konfiguration**
-  
+  Hier habe ich im File `001-reversedproxy` noch die Weiterleitungen eingetragen.
   ### Benutzer- und Rechtvergabe
+  
   ### SSH-Tunnel
   ### Sicherheitsmassnahmen
