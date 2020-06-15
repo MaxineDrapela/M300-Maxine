@@ -24,7 +24,7 @@ This is a repository that is used to document my process and which is used as a 
       - [Sicherheit](#sicherheit)
   - [K3 Vagrant](#k3-vagrant)
     - [vagrant-befehle](#vagrant-befehle)
-    - [umgebungsvariabel](#umgebungsvariabel)
+    - [Vagrantfile](#vagrantfile)
     - [netzwerkplan](#netzwerkplan)
     - [Webalizer Installation](#webalizer-installation)
     - [sicherheitsaspekte](#sicherheitsaspekte)
@@ -105,8 +105,21 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
 
 ## K3 Vagrant
  ### vagrant-befehle
- Vagrant 
- ### umgebungsvariabel
+ Mit Vagrant kann man super viele Befehle anwenden. Hier sind die, die ich am meisten gebraucht habe:
+ - `vagrant init ubuntu/xenial64` setzt eine VM auf
+ - `vagrant up` startet die VM
+ - `vagrant ssh` Stellt eine sichere verbindung via SSH mit der VM auf
+ - `vagrant status` zeigt den Status der VM an
+ - `vagrant halt` schaltet die VM aus
+ - `vagrant destroy` löscht die VM komplett
+ ### Vagrantfile
+  Das Vagrantfile wird beim Starten einer Maschine sofort erstellt/ausgeführt. Es wird gebraucht um Vagrant zu konfigurieren oder um gewisse Funktionen und Einstellungen zu ändern. Vagrantfiles werden mit Ruby geschrieben, eine Programmiersprache. 
+  **Vagrantfile bearbeiten**
+  Da ich nicht so viel Erfahrung mit Vagrant allgemein habe, habe ich nur das minimum geändert, was gefragt wurde. Die Infos, wie ich es ändern musste, konnte ich durch das Github holen, oder teilweise auch im Internet. 
+  `Vagrant.configure(2) do |Config|`
+  So kann man es bearbeiten. Ich habe diesen Weg aber erst am Schluss entdeckt. Ich habe mein Vagrantfile mit dem Notepad++ bearbeitet.
+  Mein Vagrantfile befindet sich unter "LB2" in meinem Github.
+
 
  ### netzwerkplan
  ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/netzwerkplan.PNG "Netzwerkplan")
@@ -147,6 +160,19 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
   **Konfiguration**
   Hier habe ich im File `001-reversedproxy` noch die Weiterleitungen eingetragen.
   ### Benutzer- und Rechtvergabe
+  **Benutzer**
+  Standardmässig hat Linux bereits den "root" Benutzer. Es gibt auch ein paar andere Benutzer die schon beim Start des Betriebssystemes drauf sind, aber die sind für dieses Modul nicht relevant.
+  alle Benutzer kann man unter `/etc/passwd` auffinden.
+  **Rechtevergabe**
+  Grundsätzlich ist es so, dass der Root Benutzer alle Rechte hat. Es gibt aber Befehle die das Recht für eine Datei beispielsweise ändert.
+  Hier eine Liste mit den Befehlen die ich mir merken kann:
+  - `chmod` setzt das Dateirecht
+  - `chown` ändert den Dateibesitzer
   
+  dann gibt es noch die read,write,execute Berechtigungen
+  - `-r` damit darf ein Benutzer eine Datei lesen.
+  - `-w` mit dem erlaubt es einem Benutzer eine Datei zu schreiben
+  - `-x` gibt dem Benutzer das Recht, eine Datei auszuführen
+  Natürlich gibt es noch mehr Berechtigungseinstellungen die man präzisieren kann, aber die sind mir gerade noch präsent.
   ### SSH-Tunnel
   ### Sicherheitsmassnahmen
