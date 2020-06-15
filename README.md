@@ -26,6 +26,7 @@ This is a repository that is used to document my process and which is used as a 
     - [vagrant-befehle](#vagrant-befehle)
     - [umgebungsvariabel](#umgebungsvariabel)
     - [netzwerkplan](#netzwerkplan)
+    - [Webalizer Installation](#webalizer-installation)
     - [sicherheitsaspekte](#sicherheitsaspekte)
     - [testfälle](#testfälle)
       - [Test 1 - Apache Webserver](#test-1---apache-webserver)
@@ -94,7 +95,7 @@ Ich habe in der Vergangenheit bereits einmal mit Virtualbox gearbeitet und ich k
 **Einrichtung Virtualbox**
 Virtualbox hatte ich bereits auf dem Computer, also musste ich nichts installieren. Ich musste aber dennoch die ISO-Dateien herunterladen, die wir für die Vm's dann benötigten.
 #### Vagrant
-![See the source image](https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_1489710078/vagrant.png)
+
 Mit Vagrant können wir virtuelle Maschinen viel einfacher und automatisierter erstellen.
 **Einrichtug Vagrant**
 Die Einrichtung mit Vagrant war recht simpel. Ich konnte alles so installieren, wie ich es mir vorgestellt habe. Anfangs hatte ich ein wenig Mühe, mich dran zu gewhöhnen, dass jetzt alles so einfach und schnell installiert werden kann.
@@ -108,6 +109,14 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
  ### umgebungsvariabel
 
  ### netzwerkplan
+ ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/netzwerkplan.PNG "Netzwerkplan")
+ Meinen Netzwekplan habe ich relativ simpel gehalten. Da mein Laptop nicht direkt am Router angeschlossen ist, habe ich dazwischen noch einen Access Point reingetan.
+ ### Webalizer Installation
+ Mit dem Programm Webalizer kann man verschiedene Log Dateien auswerten. Die Installation ist sehr simpel aufgebaut.
+ Wenn wir davon ausgehen, dass wir vorher bereits alle Updates durchgeführt haben, dann muss man nur noch foglenden Befehl eingeben:
+  - `sudo apt-get install -y webalizer`
+  Das war's auch schon.
+
  ### sicherheitsaspekte
  ### testfälle
  #### Test 1 - Apache Webserver
