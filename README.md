@@ -36,6 +36,7 @@ This is a repository that is used to document my process and which is used as a 
     - [Benutzer- und Rechtvergabe](#benutzer--und-rechtvergabe)
     - [SSH-Tunnel](#ssh-tunnel)
     - [Sicherheitsmassnahmen](#sicherheitsmassnahmen)
+  - [Persönlicher Lernzuwachs/Reflexion](#persönlicher-lernzuwachsreflexion)
   
 ## K1
 ### Umgebung bereit machen
@@ -176,3 +177,5 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
   Natürlich gibt es noch mehr Berechtigungseinstellungen die man präzisieren kann, aber die sind mir gerade noch präsent.
   ### SSH-Tunnel
   ### Sicherheitsmassnahmen
+  ## Persönlicher Lernzuwachs/Reflexion
+  Mit diesem Auftrag habe ich mir viel Wissen aneignen können. Ich kannte vorher weder Vagrant, noch Markdown. Bei beidem konnte ich mir ein sehr gutes Grundwissen aneignen. Im Nachhinein, gefällt mir Markdown sehr zum dokumentieren. Ich würde nun auch in Zukunft gerne mit Markdown und Vagrant arbeiten, es macht die Arbeit einfacher und schneller.
