@@ -36,6 +36,8 @@ This is a repository that is used to document my process and which is used as a 
     - [Benutzer- und Rechtvergabe](#benutzer--und-rechtvergabe)
   - [Persönlicher Lernzuwachs/Reflexion](#persönlicher-lernzuwachsreflexion)
 - [LB3](#lb3)
+  - [K1 und K2](#k1-und-k2)
+  - [K2](#k2)
   
 ## K1
 ### Umgebung bereit machen
@@ -181,3 +183,23 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
 
   # LB3
   
+  ## K1 und K2
+  Da K1 und K2 Punkts sind, welche wir in LB2 schon haben mussten, ist es eine Grundvoraussetzung, dass ich diesen Punkte bei LB3 bereits habe. Weiter oben in der Dokumentation zu LB2 kann man meine Nachweise zu K1 und K2 einsehen.
+
+  ## K2
+    **persönlicher Wissenstand auf die wichtigsten Themen**
+
+    **Containerisierung**
+    Containerisierung erlaubt es auf eine Maschine mehrere unabhängige Kontexte am laufen zu haben, die Applikationen laufen lassen. 
+      **Vorteile von Containerisierung**
+     -  Auf einer Hardware können unterschiedliche Applikationen unabhängig voneinander laufen
+     - das Betriebssystem kann in jedem Kontext anderst konfiguriert werden
+     -  Container können problemlos auf jedem Maschinentyp installiert werden
+      **Nachteile von Containerisierung**
+      - Für die Containerisierung müssen andere Konzepte und Arbeitsweisen erlernt werden
+      - es braucht ein gewisses Know-How
+    **Docker**
+    Docker ist eine Software, welche die Container-Virtualisierung von Anwendungen ermöglicht. Diese werden mittels Docker in ein Image gepackt. Die Applikation ist bis auf gewisse Schnittstellen komplett isoliert.Der Docker probiert die Arbeit mit Containern möglichst praktisch und unkompliziert zu machen.
+    **Microservices**
+    Microservices sind Dienste, die jeweils eine kleine Aufgabe in einer Software erfüllen. Die Prozesse lassen sich wie Module miteinander verbinden, und aus dem bildet sich dann eine Software. Das positive an Microservices ist, dass sie sich leicht ersetzen lassen. 
+
