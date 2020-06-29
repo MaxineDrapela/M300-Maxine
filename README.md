@@ -35,6 +35,7 @@ This is a repository that is used to document my process and which is used as a 
     - [Reverse-Proxy Einrichtung](#reverse-proxy-einrichtung)
     - [Benutzer- und Rechtvergabe](#benutzer--und-rechtvergabe)
   - [Persönlicher Lernzuwachs/Reflexion](#persönlicher-lernzuwachsreflexion)
+- [LB3](#lb3)
   
 ## K1
 ### Umgebung bereit machen
@@ -176,3 +177,7 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
   
   ## Persönlicher Lernzuwachs/Reflexion
   Mit diesem Auftrag habe ich mir viel Wissen aneignen können. Ich kannte vorher weder Vagrant, noch Markdown. Bei beidem konnte ich mir ein sehr gutes Grundwissen aneignen. Im Nachhinein, gefällt mir Markdown sehr zum dokumentieren. Ich würde nun auch in Zukunft gerne mit Markdown und Vagrant arbeiten, es macht die Arbeit einfacher und schneller.
+
+
+  # LB3
+  
