@@ -38,6 +38,13 @@ This is a repository that is used to document my process and which is used as a 
 - [LB3](#lb3)
   - [K1 und K2](#k1-und-k2)
   - [K2](#k2)
+    - [Persönlicher Wissenstand im Bezug auf die wichtigsten Themen](#persönlicher-wissenstand-im-bezug-auf-die-wichtigsten-themen)
+  - [K3](#k3)
+    - [Docker implementieren](#docker-implementieren)
+    - [Befehle](#befehle)
+    - [Eingerichtete Umgebung](#eingerichtete-umgebung)
+      - [Netzwerkplan](#netzwerkplan-1)
+      - [Schichtenmodell](#schichtenmodell)
   
 ## K1
 ### Umgebung bereit machen
@@ -184,23 +191,58 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
   # LB3
   
   ## K1 und K2
-  Da K1 und K2 Punkte sind, welche wir in LB2 schon haben mussten, ist es eine Grundvoraussetzung, dass ich diesen Punkte bei LB3 bereits habe. Weiter oben in der Dokumentation zu LB2 kann man meine Nachweise zu K1 und K2 einsehen.
+  Da K1 und K2 Punkte sind, welche wir in LB2 schon haben mussten, ist es eine Grundvoraussetzung, dass ich diesen Punkte bei LB3 bereits habe. Weiter oben in der Dokumentation zu LB2 kann man meine Nachweise zu K1 und K2 einsehen. Es war Voraussetzung, dass man Virtualbox, Visualstudio-code, Den Git-Client, Vagrant und einen SSH-Key hat.
 
   ## K2
 
-  **persönlicher Wissenstand auf die wichtigsten Themen**
+ ### Persönlicher Wissenstand im Bezug auf die wichtigsten Themen
+
 
   **Containerisierung**  
   Containerisierung erlaubt es auf eine Maschine mehrere unabhängige Kontexte am laufen zu haben, die Applikationen laufen lassen. 
   **Vorteile von Containerisierung**  
-  Auf einer Hardware können unterschiedliche Applikationen unabhängig voneinander laufen
-  das Betriebssystem kann in jedem Kontext anderst konfiguriert werden
-  Container können problemlos auf jedem Maschinentyp installiert werden
+  Auf einer Hardware können unterschiedliche Applikationen unabhängig voneinander laufen.
+  das Betriebssystem kann in jedem Kontext anderst konfiguriert werden.
+  Container können problemlos auf jedem Maschinentyp installiert werden.
   **Nachteile von Containerisierung**   
-  Für die Containerisierung müssen andere Konzepte und Arbeitsweisen erlernt werden
-  es braucht ein gewisses Know-How
+  Für die Containerisierung müssen andere Konzepte und Arbeitsweisen erlernt werden.
+  es braucht ein gewisses Know-How.
   **Docker**   
   Docker ist eine Software, welche die Container-Virtualisierung von Anwendungen ermöglicht. Diese werden mittels Docker in ein Image gepackt. Die Applikation ist bis auf gewisse Schnittstellen komplett isoliert.Der Docker probiert die Arbeit mit Containern möglichst praktisch und unkompliziert zu machen.
   **Microservices**   
  Microservices sind Dienste, die jeweils eine kleine Aufgabe in einer Software erfüllen. Die Prozesse lassen sich wie Module miteinander verbinden, und aus dem bildet sich dann eine Software. Das positive an Microservices ist, dass sie sich leicht ersetzen lassen. 
 
+ ## K3
+
+ ### Docker implementieren
+
+ Als Docker benutze ich den zur Verfügung gestellten Docker für LB3.
+ Als Container habe ich Apache2 installiert. Damit das funktioniert, habe ich den Befehl `docker build -t apache` eingegeben.
+
+Um den Container zu starten musste ich die Befehle `docker run --rm -d -p 8080:80 -y`
+ `/web/var/www/html --name apache apache` eingeben.
+
+ ### Befehle
+
+ - `RUN` Befehl ausführen
+ - `ENV` Setzt eine Umgebungsvariabel
+ - `CMD` Befehl beim Start ausführen
+ - `FROM` Image auswählen welches als        Grundlage verwendet wird
+ - `EXPOSE` Port freigeben
+ - `VOLUME` Ordner freigeben
+ - `docker build` kreiert ein Image von einem Dockerfile
+ - `docker checkpoint` Checkpoints können bearbeitet werden
+ - `docker commit` neues Image von Veränderungen erstellen
+ - `docker container` Container können bearbeitet werden
+ - `docker create` Container wird erstellt
+ - `docker exec` Befehl ausführen in einem laufendem Container
+ - `docker history` zeigt die Versionverläufe von einem Image an
+  
+Es gibt noch viel mehr Befehle, die sehr nützlich sein können, aber ich habe nicht alle gebraucht, deshalb werde ich nicht alle aufschreiben. 
+
+### Eingerichtete Umgebung
+
+#### Netzwerkplan
+
+#### Schichtenmodell
+![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/738x415_f5f5f5.jpg "Schichtenmodell")
