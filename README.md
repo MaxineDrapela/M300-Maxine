@@ -190,17 +190,17 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
 
   **persönlicher Wissenstand auf die wichtigsten Themen**
 
-  **Containerisierung**
-    Containerisierung erlaubt es auf eine Maschine mehrere unabhängige Kontexte am laufen zu haben, die Applikationen laufen lassen. 
+  **Containerisierung**  
+  Containerisierung erlaubt es auf eine Maschine mehrere unabhängige Kontexte am laufen zu haben, die Applikationen laufen lassen. 
   **Vorteile von Containerisierung**
-   Auf einer Hardware können unterschiedliche Applikationen unabhängig voneinander laufen
-   das Betriebssystem kann in jedem Kontext anderst konfiguriert werden
-   Container können problemlos auf jedem Maschinentyp installiert werden
+  Auf einer Hardware können unterschiedliche Applikationen unabhängig voneinander laufen
+  das Betriebssystem kann in jedem Kontext anderst konfiguriert werden
+  Container können problemlos auf jedem Maschinentyp installiert werden
   **Nachteile von Containerisierung**
   Für die Containerisierung müssen andere Konzepte und Arbeitsweisen erlernt werden
   es braucht ein gewisses Know-How
   **Docker**
-    Docker ist eine Software, welche die Container-Virtualisierung von Anwendungen ermöglicht. Diese werden mittels Docker in ein Image gepackt. Die Applikation ist bis auf gewisse Schnittstellen komplett isoliert.Der Docker probiert die Arbeit mit Containern möglichst praktisch und unkompliziert zu machen.
+  Docker ist eine Software, welche die Container-Virtualisierung von Anwendungen ermöglicht. Diese werden mittels Docker in ein Image gepackt. Die Applikation ist bis auf gewisse Schnittstellen komplett isoliert.Der Docker probiert die Arbeit mit Containern möglichst praktisch und unkompliziert zu machen.
   **Microservices**
-    Microservices sind Dienste, die jeweils eine kleine Aufgabe in einer Software erfüllen. Die Prozesse lassen sich wie Module miteinander verbinden, und aus dem bildet sich dann eine Software. Das positive an Microservices ist, dass sie sich leicht ersetzen lassen. 
+ Microservices sind Dienste, die jeweils eine kleine Aufgabe in einer Software erfüllen. Die Prozesse lassen sich wie Module miteinander verbinden, und aus dem bildet sich dann eine Software. Das positive an Microservices ist, dass sie sich leicht ersetzen lassen. 
 
