@@ -260,4 +260,13 @@ mit dem Befehl `docker logs streamtest`,sind folgende Logs angezeigt worden:
 
 Zur Überwachung von meinem Docker und Container habe ich mir cAdvisor von Google ausgesucht.
 `docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest`
-Mit diesem Befehl habe ich den cAdvisor zum laufen gebracht.
+Mit diesem Befehl habe ich den cAdvisor zum laufen gebracht. Ich konnte mit `localhost:8080` im Browser drauf zugreifen.
+
+**weitere Sicherheitsimplementationen**
+Ich habe aus Sicherheitsgründen einen neuen Benutzer "max" erstellt, der nicht so viel Rechte wie der root User hat. Somit gibt es keine Gefahr, dass der Benutzer etwas an den Einstellungen kabutt machen könnte.
+![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/useradd.PNG "add user")
+
+Des Weiteren hätte ich noch den Speicher begrenzen können, damit ich mich vor DoS-Angriffen schützen kann. Da dies von der Zeit aber nicht drin lag, habe ich dies nicht gemacht.
+
+Zur weiteren Sicherheit habe ich noch SELINUX enabled. 
+
