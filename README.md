@@ -42,9 +42,9 @@ This is a repository that is used to document my process and which is used as a 
   - [K3](#k3)
     - [Docker implementieren](#docker-implementieren)
     - [Befehle](#befehle)
-    - [Eingerichtete Umgebung](#eingerichtete-umgebung)
       - [Netzwerkplan](#netzwerkplan-1)
       - [Schichtenmodell](#schichtenmodell)
+  - [K4](#k4)
   
 ## K1
 ### Umgebung bereit machen
@@ -222,6 +222,10 @@ Der Reverse Proxy funktioniert ähnlich wie der Forward Proxy. Ein Außenstehend
 Um den Container zu starten musste ich die Befehle `docker run --rm -d -p 8080:80 -y`
  `/web/var/www/html --name apache apache` eingeben.
 
+![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/index angepasst.PNG "Index angepasst")
+Hier ist zu sehen, wie ich den Index im Apache angepasst habe. Der Container ist nun erolfgreich getestet.
+
+
  ### Befehle
 
  - `RUN` Befehl ausführen
@@ -240,9 +244,20 @@ Um den Container zu starten musste ich die Befehle `docker run --rm -d -p 8080:8
   
 Es gibt noch viel mehr Befehle, die sehr nützlich sein können, aber ich habe nicht alle gebraucht, deshalb werde ich nicht alle aufschreiben. 
 
-### Eingerichtete Umgebung
-
 #### Netzwerkplan
+
 
 #### Schichtenmodell
 ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/738x415_f5f5f5.jpg "Schichtenmodell")
+
+## K4
+**Sicherheitsaspekte implementieren**
+Mittels Logging protokolliert Docker alles. Die Logs kann ich dann über den Befehl `docker logs` abrufen.
+mit dem Befehl `docker logs streamtest`,sind folgende Logs angezeigt worden:
+![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/logtest.PNG "Logtest")
+
+**Microservices zur Überwachung**
+
+Zur Überwachung von meinem Docker und Container habe ich mir cAdvisor von Google ausgesucht.
+`docker run -d --name cadvisor -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys:ro -v /var/lib/docker/:/var/lib/docker:ro -p 8080:8080 google/cadvisor:latest`
+Mit diesem Befehl habe ich den cAdvisor zum laufen gebracht.
