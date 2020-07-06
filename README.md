@@ -45,6 +45,7 @@ This is a repository that is used to document my process and which is used as a 
       - [Netzwerkplan](#netzwerkplan-1)
       - [Schichtenmodell](#schichtenmodell)
   - [K4](#k4)
+    - [Reflexion](#reflexion)
   
 ## K1
 ### Umgebung bereit machen
@@ -268,5 +269,11 @@ Ich habe aus Sicherheitsgründen einen neuen Benutzer "max" erstellt, der nicht 
 
 Des Weiteren hätte ich noch den Speicher begrenzen können, damit ich mich vor DoS-Angriffen schützen kann. Da dies von der Zeit aber nicht drin lag, habe ich dies nicht gemacht.
 
-Zur weiteren Sicherheit habe ich noch SELINUX enabled. 
+Zur weiteren Sicherheit habe ich noch SELINUX installiert, konfiguriert und enabled. 
+![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/SElinux.PNG "SElinux")
 
+### Reflexion
+
+Für die LB3 hatte ich für meinen Geschmack viel zu wenig Zeit. Auch wenn ich mehrmals ausserhalb der Schulzeiten, am Wochenende dran gearbeitet habe, konnte ich nicht alles installieren und so konfigurieren wie ich es mir vorgestellt habe. Es war für mich ein wenig zu hohes Niveau, um es mir die meiste Zeit selber beibringen zu können. 
+Deshalb habe ich soviel probiert wie es geht, und dann hat es halt manchesmal nicht so geklappt, wie ich es mir erhofft habe, aber das ist okay.
+Ich habe nichts desto trotz ziemlich viel von der LB mitgenommen und gelernt.
