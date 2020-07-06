@@ -246,7 +246,7 @@ Hier ist zu sehen, wie ich den Index im Apache angepasst habe. Der Container ist
 Es gibt noch viel mehr Befehle, die sehr nützlich sein können, aber ich habe nicht alle gebraucht, deshalb werde ich nicht alle aufschreiben. 
 
 #### Netzwerkplan
-
+![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/netzwerkplan1.PNG "Netzerkplan")
 
 #### Schichtenmodell
 ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/738x415_f5f5f5.jpg "Schichtenmodell")
@@ -271,6 +271,7 @@ Des Weiteren hätte ich noch den Speicher begrenzen können, damit ich mich vor 
 
 Zur weiteren Sicherheit habe ich noch SELINUX installiert, konfiguriert und enabled. 
 ![alt text](https://github.com/MaxineDrapela/M300-Maxine/blob/master/Bilder/SElinux.PNG "SElinux")
+Mit Selinux werden erstmal alle eingehende oder ausgehende Verbindungen abgelehnt, die nicht benötigt werden. Dadurch sind nur Ports offen, die auch benötigt werden.
 
 ### Reflexion
 
